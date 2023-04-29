@@ -2,7 +2,7 @@
 @use 'sass:math';
 
 // Подключение миксинов
-@import 'base/mixins';
+@import '_mixins.scss';
 
 // Подключение файла обнуляющих стилей
 @import '_null_style.scss';
@@ -598,8 +598,8 @@ body.lock {
 			margin-top: 1px;
 		}
 		&__slogan p {
-			font-size: 80px;
-			line-height: 80px;
+			font-size: rem(80);
+			line-height: rem(80);
 		}
 		&__offer {
 			font-size: 24px;
@@ -698,9 +698,9 @@ body.lock {
 			display: none;
 		}
 		// .header__slogan
-		&__slogan {
-			font-size: 70px;
-			line-height: 70px;
+		&__slogan p {
+			font-size: rem(70);
+			line-height: rem(70);
 		}
 		// .header__offer
 		&__offer {
@@ -763,6 +763,7 @@ body.lock {
 			transform: rotate(45deg);
 		}
 	}
+
 	.all-for-you {
 		// .all-for-you__title
 		&__title {
@@ -853,10 +854,16 @@ body.lock {
 			margin-bottom: 30px;
 		}
 		// .header__slogan
-		&__slogan {
+		&__slogan p {
 			font-size: 12.174vw;
 			line-height: 12.174vw;
-			margin-bottom: 30px;
+			&:nth-child(2) {
+				margin-left: 17.217vw;
+			}
+			&:nth-child(3) {
+				margin-left: 34.783vw;
+				margin-bottom: 30px;
+			}
 		}
 		// .header__offer
 		&__offer {
@@ -935,4 +942,7 @@ body.lock {
 			margin-bottom: 20px;
 		}
 	}
+}
+
+@media screen and (max-width: 320px) {
 }

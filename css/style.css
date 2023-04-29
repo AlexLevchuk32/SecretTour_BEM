@@ -720,8 +720,8 @@ body.lock {
     margin-top: 1px;
   }
   .header__slogan p {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 5rem;
+    line-height: 5rem;
   }
   .header__offer {
     font-size: 24px;
@@ -811,9 +811,9 @@ body.lock {
   .header__phone {
     display: none;
   }
-  .header__slogan {
-    font-size: 70px;
-    line-height: 70px;
+  .header__slogan p {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
   }
   .header__offer {
     font-size: 22px;
@@ -938,9 +938,15 @@ body.lock {
   .header__nav {
     margin-bottom: 30px;
   }
-  .header__slogan {
+  .header__slogan p {
     font-size: 12.174vw;
     line-height: 12.174vw;
+  }
+  .header__slogan p:nth-child(2) {
+    margin-left: 17.217vw;
+  }
+  .header__slogan p:nth-child(3) {
+    margin-left: 34.783vw;
     margin-bottom: 30px;
   }
   .header__offer {
